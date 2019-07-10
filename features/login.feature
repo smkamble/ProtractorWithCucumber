@@ -8,5 +8,5 @@ Feature: To validate Login functionality
         Then I navigate to "home" page
 
         Examples:
-            | username                       | password |
-            | plannedpayments67890@gmail.com | Test@123 |
+            | username      | password |
+            | abc@gmail.com | Test@123 |
