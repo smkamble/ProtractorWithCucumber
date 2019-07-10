@@ -1,0 +1,73 @@
+[
+  {
+    "keyword": "Feature",
+    "name": "To validate Login functionality",
+    "line": 1,
+    "id": "to-validate-login-functionality",
+    "tags": [],
+    "uri": "features\\login.feature",
+    "elements": [
+      {
+        "id": "to-validate-login-functionality;login-using-valid-credentials",
+        "keyword": "Scenario",
+        "line": 14,
+        "name": "Login using valid credentials",
+        "tags": [
+          {
+            "name": "@OutlineScenario",
+            "line": 3
+          },
+          {
+            "name": "@Functional",
+            "line": 4
+          },
+          {
+            "name": "@Smoke",
+            "line": 4
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 6,
+            "name": "I am on Sign-in with Google page",
+            "result": {
+              "status": "undefined"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 7,
+            "name": "I click on Sign-in with Google",
+            "result": {
+              "status": "undefined"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 8,
+            "name": "I enter username as \"plannedpayments67890@gmail.com\" and click on next button",
+            "result": {
+              "status": "undefined"
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "node_modules\\protractor-cucumber-framework\\lib\\resultsCapturer.js:26"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2000000
+            }
+          }
+        ]
+      }
+    ]
+  }
+]
