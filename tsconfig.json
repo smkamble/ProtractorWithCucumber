@@ -3,10 +3,14 @@
 		"target": "es6",
 		"module": "commonjs",
 		"moduleResolution": "node",
-		"inlineSourceMap": true,
-		"declaration": false,
+		"sourceMap": false,
+		"emitDecoratorMetadata": true,
+		"experimentalDecorators": true,
+		"removeComments": false,
 		"noImplicitAny": false,
-		"outDir": "JSFiles",
+		"suppressImplicitAnyIndexErrors": true,
+        "declaration": false,
+		"skipLibCheck": true,
 		"types": [
 			"chai",
 			"cucumber",
@@ -17,8 +21,10 @@
 			"node_modules/@types"
 		]
 	},
+	"compileOnSave": true,
 	"exclude": [
 		"node_modules/*",
-		"JSFiles"
+		"**/*-aot.ts",
+		"typescript"
 	]
 }

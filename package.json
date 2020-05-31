@@ -9,9 +9,10 @@
   "scripts": {
     "tsc": "tsc",
     "tsc:w": "tsc -w",
-    "pretest": "npm run tsc",
-    "postinstall": "webdriver-manager update && tsc",
-    "test": "protractor config/config.js"
+    "clean": "rimraf typeScript/",
+    "pretest": "npm run clean && npm run tsc",
+    "postinstall": "webdriver-manager update && webdriver-manager update && tsc",
+    "test": "protractor config.js"
   },
   "keywords": [
     "angular",
@@ -28,32 +29,30 @@
     "bdd"
   ],
   "dependencies": {
-    "cucumber": "^5.0.3",
-    "cucumber-expressions": "^5.0.17",
-    "cucumber-html-reporter": "^4.0.3",
-    "mkdirp": "^0.5.1",
-    "protractor": ">= 5.4.0",
-    "puppeteer": "^1.18.1",
-    "request": "^2.88.0",
-    "request-promise": "^4.2.2",
-    "rimraf": "^2.6.2",
-    "ts-node": "^8.0.2",
-    "typescript": "^3.0.1",
-    "winston": "^3.1.0"
+    "cucumber": "^6.0.5",
+    "cucumber-expressions": "^8.3.0",
+    "cucumber-html-reporter": "^5.2.0",
+    "mkdirp": "^1.0.4",
+    "protractor": ">=7.0.0",
+    "request": "^2.88.2",
+    "request-promise": "^4.2.5",
+    "rimraf": "^3.0.2",
+    "ts-node": "^8.10.2",
+    "typescript": "^3.9.3",
+    "winston": "^3.2.1"
   },
   "devDependencies": {
-    "@types/cucumber": ">=4.0.4",
-    "@types/node": "^7.0.0",
-    "@types/selenium-webdriver": "^3.0.10",
-    "all-contributors-cli": "^6.1.0",
-    "chai": "^4.1.2",
+    "@types/cucumber": ">=6.0.1",
+    "@types/node": "^14.0.6",
+    "@types/selenium-webdriver": "^4.0.9",
+    "all-contributors-cli": "^6.15.0",
+    "chai": "^4.2.0",
     "chai-as-promised": "^7.1.1",
-    "chai-like": "^0.2.14",
-    "jasmine-protractor-matchers": "^1.0.1",
-    "jasmine-spec-reporter": "^4.2.1",
-    "protractor-cucumber-framework": "^6.1.2",
-    "protractor-multiple-cucumber-html-reporter-plugin": "^1.8.1",
-    "@types/chai": "^4.1.7",
-    "@types/chai-as-promised": "^7.1.0"
+    "chai-like": "^1.1.1",
+    "jasmine-protractor-matchers": "^2.0.1",
+    "jasmine-spec-reporter": "^5.0.2",
+    "protractor-cucumber-framework": "^6.2.1",
+    "@types/chai": "^4.2.11",
+    "@types/chai-as-promised": "^7.1.2"
   }
 }

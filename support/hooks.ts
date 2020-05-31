@@ -1,8 +1,9 @@
 import { BeforeAll, After, AfterAll, Status } from "cucumber";
 import { browser } from "protractor";
 import { BasePage } from "./BasePage";
+
 var basePage = new BasePage();
-BeforeAll({ timeout: 100 * 1000 }, async () => {
+BeforeAll({timeout: 100 * 1000}, async () => {
     browser.ignoreSynchronizaton = true;
     await basePage.OpenBrowser();
 });
@@ -18,6 +19,6 @@ After(async function (scenario) {
     browser.executeScript('window.sessionStorage.clear(); window.localStorage.clear();')
 });
 
-AfterAll({ timeout: 100 * 1000 }, async () => {
+AfterAll({timeout: 100 * 1000}, async () => {
     await browser.quit();
 });

@@ -2,7 +2,7 @@ import { $, ElementFinder, browser, element, by } from "protractor";
 
 export class LoginPageObject {
 
-    public logo: ElementFinder=$('.img-responsive.logo');
+    public signInLabel: ElementFinder=$('#headingText');
     public signInWithGoogleButton: ElementFinder= $('.ppm-gmail-button.button');
     public emailorPhoneTxtBox: ElementFinder= $('#identifierId');
     public passwordTxtBox: ElementFinder= element(by.xpath("//input[@name='password']"));
